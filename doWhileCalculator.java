@@ -30,12 +30,23 @@ public class doWhileCalculator {
 				break;
 			case 6:
 				System.exit(0);
-			}
 			
+			default:
+				System.out.println("invlid option");
+			}
+			System.out.println("do you want to continue Y/y");
+			char option=sc.next().charAt(0);
+			if(option=='y'||option=='Y') {
+				continue;
+			}
+			else {
+				System.out.println("adios amigo");
+				break;
+			}
 		
 		}while(true);
-		
+		}
 
 	}
 
-}
+
