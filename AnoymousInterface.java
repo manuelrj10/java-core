@@ -1,22 +1,22 @@
 package nestedclass;
-abstract class MyAbsClass{
-	abstract void show();
+interface job{
+	void show();
 }
 
-public class AnonymousInnerclass {
+public class AnoymousInterface {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MyAbsClass obj =new MyAbsClass() {
+		job j=new job() {
 			
 			@Override
-			void show() {
+			public void show() {
 				// TODO Auto-generated method stub
-				System.out.println("hi");
+				System.out.println("hi boss");
 				
 			}
 		};
-		obj.show();
+		j.show();
 
 	}
 
